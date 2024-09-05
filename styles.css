@@ -1,0 +1,18 @@
+/* TODO check shadows */
+:root {
+  --font-color: #222222;
+  --pourple-main: #962765;
+  --blue-light: #76ADC5;
+  --green-01: #098E1B;
+
+  --grey-lighter: #F1F1F1;
+  --grey-light: #D9D9D9;
+  --grey-darker: #5B5B5B;
+
+  --pink-light: #F7CCD0;
+  --pink-lighter: #FBE8E9;
+
+  --disabled-color: #AAAAAA;
+  --gradiant-start: #551D5D;
+  --gradiant-end: #932765;
+}
