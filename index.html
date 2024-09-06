@@ -7,9 +7,9 @@
 </head>
 <link rel="stylesheet" href="styles.css">
 <body>
-  <div class="component-frame"> 
+  <div class="component-frame flex col"> 
     <!-- breadcrumb -->
-    <div class="breadcrumb">
+    <div class="breadcrumb flex">
       <img src="./res/img/icons/home_icon.svg" alt="Icono casa">
       <span>/</span>
       <span>Cartuchos y tones</span>
@@ -21,17 +21,17 @@
       <span>Compatible HP 22XL Color</span>
     </div>
     <!-- shop item -->
-    <div class="shop-item">
+    <div class="shop-item flex">
       <!-- icons/photo -->
-      <div class="img-frame">
-        <div class="icons-wrapper">
+      <div class="gallery-frame flex">
+        <div class="icons-wrapper flex col">
           <img src="./res/img/photo/free_return.png" alt="Devolución gratuita">
-          <div class="xs-gallery">
-            <div class="select-dots">
-              <span class="dot clickable"></span>
+          <div class="xs-gallery flex">
+            <div class="select-dots flex col">
+              <span class="dot clickable active"></span>
               <span class="dot clickable"></span>
             </div>
-            <div class="select-img">
+            <div class="select-img flex col">
               <img src="./res/img/photo/tonner.png" alt="Cartucho de frente" class="clickable active">
               <img src="./res/img/photo/tonner.png" alt="Cartucho de frente" class="clickable">
             </div>

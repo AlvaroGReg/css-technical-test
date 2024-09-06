@@ -17,11 +17,19 @@
   --gradiant-end: #932765;
 }
 
-
+/* utils */
 * {
   /* ive stopped using this rules, but im feeling its necesary while working with vanilla HTML & CSS */
   padding: 0;
   margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
 }
 
 .bold {
@@ -32,6 +40,14 @@
   cursor: pointer;
 }
 
+.dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block; 
+  height: 10px;
+  width: 10px;
+}
+
 body {
   color: var(--font-color);
   /* 14px */
@@ -39,17 +55,62 @@ body {
   padding: 5rem;
 }
 
-.breadcrumb {
-  align-items: center;
-  box-shadow: 0px 0px 6px 0px #00000030;
-  color: var(--grey-light);
-  display: flex;
-  gap: 14.6px;
-  height: 46px;
-  justify-content: flex-start;
-  width: 100%;
+/* component */
+.component-frame {
+  gap: 40px;
 
-  span:last-child {
-    font-weight: bold;
+  .breadcrumb {
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px #00000030;
+    color: var(--grey-light);
+    gap: 14.6px;
+    height: 46px;
+    justify-content: flex-start;
+    width: 100%;
+
+    span:last-child {
+      font-weight: bold;
+    }
+  }
+
+  .shop-item {
+    box-shadow: 4px 4px 6px 0px #00000030;
+    justify-content: space-between;
+    padding-left: 10px;
+    width: 100%;
+
+    .gallery-frame {
+      gap: 5px;
+
+      .icons-wrapper {
+        gap: 20px;
+        justify-content: center;
+
+        .xs-gallery {
+          gap: 10px;
+
+          .select-dots {
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .dot.active {
+              background-color: var(--grey-darker);
+            }
+          }
+
+          .select-img {
+
+            img {
+              width: 50px;
+
+              &.active {
+                border: solid 1px var(--pourple-main);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
