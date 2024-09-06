@@ -22,7 +22,6 @@
   /* ive stopped using this rules, but im feeling its necesary while working with vanilla HTML & CSS */
   padding: 0;
   margin: 0;
-  color: var(--font-color);
 }
 
 .bold {
@@ -34,6 +33,9 @@
 }
 
 body {
+  color: var(--font-color);
+  /* 14px */
+  font-size: 0.9rem;
   padding: 5rem;
 }
 
