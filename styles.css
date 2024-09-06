@@ -148,6 +148,101 @@ body {
         }
       }
     }
+
     /* buying */
+    .shopping-wrapper {
+      align-items: center;
+      background-color: var(--grey-lighter);
+      gap: 20px;
+      padding: 20px 40px;
+
+      .price {
+        font-size: 12px;
+
+        span {
+          color: var(--pourple-main);
+          font-size: 40px;
+        }
+      }
+
+      .financing-frame {
+        align-items: center;
+        border: solid 1px var(--pink-light);
+        background-color: var(--pink-lighter);
+        font-size: 12px;
+        gap: 5px;
+
+        img {
+          height: 14px;
+          margin-left: 5px;
+          width: 71px;
+        }
+      }
+
+      .disponibility-wrapper {
+        align-items: center;
+        color: var(--green-01);
+      }
+
+      .quantity {
+        gap: 10px;
+        align-items: center;
+
+        .circle-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--blue-light);
+          border: none;
+          border-radius: 25px;
+          height: 32px;
+          width: 32px;
+
+          img {
+            height: 16.31px;
+            width: 17.84px;
+          }
+
+          &.disabled {
+            background-color: var(--grey-mid);
+          }
+        }
+        
+        input {
+          border: solid 2px var(--blue-light);
+          border-radius: 10px;
+          padding: 10px 40px;
+          text-align: center;
+        }
+      }
+
+      .cart-button {
+        align-items: center;
+        background: linear-gradient(90deg, var(--gradiant-start) 0%, var(--gradiant-end) 100%);
+        border: none;
+        border-radius: 25px;
+        color: white;
+        font-size: 15px;
+        gap: 20px;
+        justify-content: center;
+        padding: 10px 30px;
+      }
+
+      .list {
+        border-top: solid 1px var(--grey-mid);
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        height: 100%;
+        width: 100%;
+
+        .list-button {
+          border: none;
+          color: var(--pourple-main);
+          gap: 5px;
+          font-size: 12px;
+        }
+      }
+    }
   }
 }

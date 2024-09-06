@@ -76,20 +76,21 @@
         </div>
        </div>
        <!-- shopping -->
-       <div class="shopping-wrapper">
+       <div class="shopping-wrapper flex col">
         <div class="price">
-          <span>17,00 €</span>
+          <span class="bold">17,00 € </span>
           IVA incluído
         </div>
-        <div class="financing-frame">
-          o 3 plazos de 
-          <span class="bold">5,66 €</span>
+        <div class="financing-frame flex">
+         o 3 plazos de 
+
+          <span class="bold"> 5,66 € </span>
            sin intereses
           <!-- TODO maybe link but i dont want to use 'href target _blank' -->
           <img src="./res/img/logos/scalapay_logo.png" alt="Logo Scalapay">
         </div>
-        <div class="disponibility-wrapper">
-          <div class="upper-disponibility">
+        <div class="disponibility-wrapper flex col">
+          <div class="upper-disponibility bold flex ">
             <img src="./res/img/icons/check_icon.svg" class="icon" alt="Tick disponible">
             DISPONIBLE
           </div>
@@ -98,17 +99,21 @@
             <span class="bold">martes 16</span>
           </div>
         </div>
-        <div class="quantity">
-          <button class="circle-button inactive">-</button>
-          <input type="number" class="quantity-input">
-          <button class="circle-button active">+</button>
+        <div class="quantity flex">
+          <button class="circle-button disabled" (click)="">
+            <img src="./res/img/icons/less_icon.svg" alt="Restar">
+          </button>
+          <input type="text" value="1" class="quantity-input">
+          <button class="circle-button" (click)="">
+            <img src="./res/img/icons/add_icon.svg" alt="Sumar">
+          </button>
         </div>
-        <button class="cart-button">
+        <button class="cart-button flex">
           AÑADIR AL CARRITO
           <img src="./res/img/icons/cart_icon.svg" class="icon-chart" alt="Carrito de la compra">
         </button>
-        <div class="list">
-          <button>         
+        <div class="list flex">
+          <button class="list-button flex">         
             <img src="./res/img/icons/list_icon.svg" class="list-icon" alt="Añadir a lista">
             AÑADIR A TU LISTA
           </button>
