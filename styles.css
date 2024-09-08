@@ -296,17 +296,40 @@ body {
           }
         }
       }
+
+
+      & .shopping-wrapper {
+        & .price {
+          span {
+            font-size: 36px;
+          }
+        }
+      }
+
+      /* gallery img was given little pace to show
+      in smaller screens ive decided to change display
+      so pace were widder
+      */
+      .gallery-frame {
+        flex-direction: column-reverse;
+
+        .icons-wrapper {
+          flex-direction: column-reverse;
+          padding-bottom: 5px;
+
+          .select-dots {
+            display: none;
+          }
+
+          .select-img {
+            flex-direction: row;
+          }
+
+          .return-logo {
+            width: 50px;
+          }
+        }
+      }
     }
   }
-  .component-frame {
-    & .shop-item {
-        & .shopping-wrapper {
-            & .price {
-                span {
-                    font-size: 36px;
-                }
-            }
-        }
-    }
-}
 }
