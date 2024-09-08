@@ -141,7 +141,7 @@ body {
       .description-body {
         justify-content: space-evenly;
         height: 100%;
-        
+
         .title {
           font-family: 'Bebas Neue';
         }
@@ -159,7 +159,7 @@ body {
       align-items: center;
       background-color: var(--grey-lighter);
       gap: 20px;
-      padding: 20px 40px;
+      padding: 20px 120px;
 
       .price {
         font-size: 12px;
@@ -176,6 +176,7 @@ body {
         background-color: var(--pink-lighter);
         font-size: 12px;
         gap: 5px;
+        padding: 3px 10px;
 
         img {
           height: 14px;
@@ -216,6 +217,7 @@ body {
         input {
           border: solid 2px var(--blue-light);
           border-radius: 10px;
+          max-width: 100px;
           padding: 10px 40px;
           text-align: center;
         }
@@ -231,6 +233,7 @@ body {
         gap: 20px;
         justify-content: center;
         padding: 10px 30px;
+        width: 100%;
       }
 
       .list {
