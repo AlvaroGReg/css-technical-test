@@ -75,27 +75,28 @@ body {
 
   .shop-item {
     box-shadow: 4px 4px 6px 0px #00000030;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
     width: 100%;
 
     /* gallery */
     .gallery-frame {
       gap: 5px;
-      width: 30%;
+      width: 25%;
 
       .icons-wrapper {
+        align-items: center;
         gap: 20px;
         justify-content: center;
         padding-left: 5px;
 
         .return-logo {
-          width: 100%;
+          width: 80%;
           max-width: 70px;
         }
 
         .xs-gallery {
-          gap: 10px;
+          gap: 5px;
 
           .select-dots {
             align-items: center;
@@ -123,6 +124,7 @@ body {
 
       .img-wrapper {
         align-items: center;
+        flex-grow: 1;
         justify-content: center;
 
         img {
@@ -136,7 +138,7 @@ body {
     .item-description {
       justify-content: space-between;
       padding: 20px;
-      width: 30%;
+      width: 45%;
 
       .description-header {
 
