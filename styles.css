@@ -34,6 +34,7 @@
 
 .bold {
   font-weight: bold;
+  font-family: 'Lato', sans-serif;
 }
 
 .clickable {
@@ -140,6 +141,10 @@ body {
       .description-body {
         justify-content: space-evenly;
         height: 100%;
+        
+        .title {
+          font-family: 'Bebas Neue';
+        }
         
         span.dot {
           background-color: var(--blue-light);
