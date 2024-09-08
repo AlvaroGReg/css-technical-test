@@ -1,4 +1,3 @@
-/* TODO check shadows */
 :root {
   --font-color: #222222;
   --pourple-main: #962765;
@@ -19,7 +18,6 @@
 
 /* utils */
 * {
-  /* ive stopped using this rules, but im feeling its necesary while working with vanilla HTML & CSS */
   padding: 0;
   margin: 0;
 }
@@ -283,10 +281,7 @@ body {
 /* media query to 1024 */
 @media (max-width: 1080px) {
 
-  /* 
-  big selector cause css focus on more specific rules
-   so media has to be similar to normal
-   */
+  /* smaller fonts */
   .component-frame {
     & .shop-item {
       & .item-description {
