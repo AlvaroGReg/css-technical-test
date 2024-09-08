@@ -44,7 +44,7 @@
 .dot {
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block; 
+  display: inline-block;
   height: 10px;
   width: 10px;
 }
@@ -53,7 +53,7 @@ body {
   color: var(--font-color);
   /* 14px */
   font-size: 0.9rem;
-  padding: 5rem;
+  padding: 4rem;
 }
 
 /* component */
@@ -78,7 +78,6 @@ body {
     box-shadow: 4px 4px 6px 0px #00000030;
     gap: 20px;
     justify-content: space-between;
-    padding-left: 10px;
     width: 100%;
 
     /* gallery */
@@ -145,11 +144,11 @@ body {
         .description-title {
           font-size: 28px;
         }
-        
+
         .ref {
           color: var(--grey-mid);
         }
-        
+
         .stars img {
           height: 14.39px;
           width: 14.42px;
@@ -163,7 +162,7 @@ body {
         .title {
           font-family: 'Bebas Neue';
         }
-        
+
         span.dot {
           background-color: var(--blue-light);
           height: 9px;
@@ -197,6 +196,7 @@ body {
         font-size: 12px;
         gap: 5px;
         padding: 3px 10px;
+        white-space: nowrap;
 
         img {
           height: 14px;
@@ -237,7 +237,7 @@ body {
             background-color: var(--grey-mid);
           }
         }
-        
+
         input {
           border: solid 2px var(--blue-light);
           border-radius: 10px;
@@ -277,4 +277,35 @@ body {
       }
     }
   }
+}
+
+/* media query to 1024 */
+@media only screen and (min-device-width: 1023px) and (max-device-width: 1080px) {
+
+  /* 
+  big selector cause css focus on more specific rules
+   so media has to be similar to normal
+   */
+  .component-frame {
+    & .shop-item {
+      & .item-description {
+        & .description-header {
+          .description-title {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .component-frame {
+    & .shop-item {
+        & .shopping-wrapper {
+            & .price {
+                span {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
 }
